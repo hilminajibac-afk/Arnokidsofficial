@@ -554,7 +554,6 @@ to{
     z-index:9999;
     transition:.3s ease;
 }
-}
 .main-header.scrolled{
     padding:0;
     box-shadow:0 10px 30px rgba(0,0,0,.12);
@@ -1133,4 +1132,12 @@ to{
 
 }
 
+}
+
+body{
+    padding-top:145px;
+}
+
+.hero{
+    margin-top:20px;
 }
