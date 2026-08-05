@@ -1,0 +1,77 @@
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:20px auto;
+
+}
+
+.hero-left{
+
+    width:100%;
+
+}
+/* ===========================
+   SWIPER
+=========================== */
+
+.bannerSwiper{
+
+    width:100%;
+
+    aspect-ratio:1536 / 600;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.bannerSwiper img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    display:block;
+}
+
+/* Pagination */
+
+.bannerSwiper .swiper-pagination-bullet{
+    background:#fff;
+    opacity:.5;
+}
+
+.bannerSwiper .swiper-pagination-bullet-active{
+    opacity:1;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.hero{
+    width:100%;
+}
+
+.bannerSwiper{
+    width:100%;
+    aspect-ratio:1536 / 600;
+}
+
+.bannerSwiper img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+}
