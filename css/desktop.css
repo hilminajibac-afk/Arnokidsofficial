@@ -1,0 +1,52 @@
+.desktop-filter{
+    position:relative;
+}
+
+.desktop-filter-btn{
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:#fafafa;
+    cursor:pointer;
+    font-size:18px;
+    color:#333;
+    transition:.3s;
+}
+
+.desktop-filter-btn:hover{
+    background:#F59E0B;
+    color:#fff;
+}
+
+.desktop-filter-menu{
+    position:absolute;
+    top:58px;
+    right:0;
+    width:240px;
+    background:#fff;
+    border-radius:14px;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    padding:8px;
+    display:none;
+    z-index:9999;
+}
+
+.desktop-filter.open .desktop-filter-menu{
+    display:block;
+    animation:fadeDown .25s;
+}
+
+.desktop-filter-menu a{
+    display:block;
+    padding:12px 16px;
+    text-decoration:none;
+    color:#333;
+    border-radius:10px;
+    transition:.25s;
+}
+
+.desktop-filter-menu a:hover{
+    background:#f5f5f5;
+    color:#F59E0B;
+}
