@@ -45,7 +45,7 @@ TABLET
     position:sticky;
     top:0;
     z-index:999;
-    background:#fff;
+    background:#0E1F4D;
     height:64px;
     padding:0 14px;
     box-shadow:0 3px 12px rgba(0,0,0,.08);
@@ -78,7 +78,7 @@ TABLET
     align-items:center;
     background:none;
     border:none;
-    color:#0E1F4D;
+    color:#fff;
     font-size:21px;
     text-decoration:none;
     position:relative;
