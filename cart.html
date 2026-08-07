@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang | ARNOKIDS</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="cart.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="cart-header">
+        <button class="back-btn" onclick="location.href='index.html'">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+
+        <h2>Keranjang</h2>
+    </header>
+
+    <!-- List Produk -->
+    <main>
+
+        <div id="cartItems">
+
+            <!-- Diisi otomatis oleh cartPage.js -->
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="cart-footer">
+
+        <div class="total-box">
+
+            <span>Total Belanja</span>
+
+            <strong id="grandTotal">
+                Rp0
+            </strong>
+
+        </div>
+
+        <button id="checkoutBtn">
+            <i class="fab fa-whatsapp"></i>
+            Kirim Pesanan
+        </button>
+
+    </footer>
+    
+    <div id="confirmOrder" class="confirm-order">
+
+    <div class="confirm-box">
+
+        <h3>Konfirmasi Pesanan</h3>
+
+        <div class="confirm-info">
+
+            <p>
+                <strong>Total Produk</strong>
+                <span id="confirmItem">0</span>
+            </p>
+
+            <p>
+                <strong>Total Harga</strong>
+                <span id="confirmTotal">Rp0</span>
+            </p>
+
+        </div>
+
+        <div class="confirm-buttons">
+
+            <button id="cancelOrder" class="cancel-btn">
+                Batal
+            </button>
+
+            <button id="confirmWA" class="wa-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                Kirim ke WhatsApp
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="js/config.js"></script>
+    <script src="js/storage.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/cartPage.js"></script>
+
+</body>
+</html>
