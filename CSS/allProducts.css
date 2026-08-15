@@ -1,0 +1,653 @@
+/* =========================================================
+   ALL PRODUCTS PAGE
+========================================================= */
+
+.all-products-page {
+    width: 100%;
+    min-height: 60vh;
+    background: #f5f5f5;
+    padding: 10px 0 70px;
+}
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.all-page-section {
+    width: 95%;
+    max-width: 1400px;
+    margin: 35px auto;
+}
+
+.all-products-page .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.all-products-page .section-badge {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+
+    padding: 9px 16px;
+
+    background: #0E1F4D;
+    color: #FFCF00;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   JUMLAH PRODUK
+========================================================= */
+
+.product-count {
+    color: #777;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BEST SELLER & PRODUK TERBARU
+========================================================= */
+
+.all-products-page .bestSellerSwiper,
+.all-products-page .newProductSwiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.all-products-page .swiper-wrapper {
+    align-items: stretch;
+}
+
+.all-products-page .swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+.all-products-page .swiper-slide .card {
+    width: 100%;
+}
+
+
+/* =========================================================
+   SEMUA PRODUK
+========================================================= */
+
+.all-products-page .products {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   CARD
+   Mengikuti card produk yang sudah ada
+========================================================= */
+
+.all-products-page .card {
+    width: 100%;
+}
+
+
+/* =========================================================
+   GAMBAR PRODUK
+========================================================= */
+
+.all-products-page .card img {
+    width: 100%;
+    height: 250px;
+
+    object-fit: contain;
+
+    background: #fff;
+}
+
+
+/* =========================================================
+   INFO PRODUK
+========================================================= */
+
+.all-products-page .card .info {
+    padding: 15px;
+}
+
+.all-products-page .card .name {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.all-products-page .card .price {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .all-page-section {
+        width: 94%;
+    }
+
+    .all-products-page .products {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 15px;
+    }
+
+    .all-products-page .card img {
+        height: 230px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE HP
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .all-products-page {
+        padding-bottom: 90px;
+    }
+
+    .all-page-section {
+        width: 94%;
+        margin: 28px auto;
+    }
+
+
+    /* Header section */
+
+    .all-products-page .section-header {
+        margin-bottom: 14px;
+    }
+
+    .all-products-page .section-badge {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .product-count {
+        font-size: 12px;
+    }
+
+
+    /* Semua produk */
+
+    .all-products-page .products {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+
+    /* Card */
+
+    .all-products-page .card img {
+        height: 210px;
+    }
+
+    .all-products-page .card .info {
+        padding: 10px;
+    }
+
+    .all-products-page .card .name {
+        font-size: 14px;
+    }
+
+    .all-products-page .card .price {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   HP KECIL
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .all-page-section {
+        width: 92%;
+        margin: 24px auto;
+    }
+
+    .all-products-page .products {
+        gap: 10px;
+    }
+
+    .all-products-page .card img {
+        height: 185px;
+    }
+
+    .all-products-page .card .name {
+        font-size: 13px;
+    }
+
+    .all-products-page .card .price {
+        font-size: 14px;
+    }
+
+    .all-products-page .section-badge {
+        font-size: 12px;
+    }
+}
+
+/* =========================================================
+   BEST SELLER & PRODUK TERBARU = GRID
+   SAMA SEPERTI SEMUA PRODUK
+========================================================= */
+
+.all-products-page .best-seller .products,
+.all-products-page .new-products .products {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(220px, 1fr));
+
+    gap: 20px;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .all-products-page .best-seller .products,
+    .all-products-page .new-products .products {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .all-products-page .best-seller .products,
+    .all-products-page .new-products .products {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+
+    }
+
+}
+
+/* =========================
+   PRODUCT MODE NAV
+   ========================= */
+
+.product-mode-nav{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:16px 20px 0;
+
+    display:flex;
+    gap:10px;
+
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.product-mode-nav::-webkit-scrollbar{
+    display:none;
+}
+
+.product-mode-btn{
+    flex:0 0 auto;
+
+    padding:10px 20px;
+
+    border:1px solid #d8dce5;
+    border-radius:999px;
+
+    background:#fff;
+    color:#0E1F4D;
+
+    font-size:14px;
+    font-weight:700;
+
+    cursor:pointer;
+    white-space:nowrap;
+
+    transition:.2s ease;
+}
+
+.product-mode-btn:hover{
+    background:#f1f4fa;
+}
+
+.product-mode-btn.active{
+    background:#0E1F4D;
+    color:#fff;
+    border-color:#0E1F4D;
+}
+
+
+/* =========================
+   JARAK KE BEST SELLER
+   ========================= */
+
+.product-mode-nav + .all-products-page{
+    padding-top:18px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media(max-width:768px){
+
+    .product-mode-nav{
+        padding:10px 12px 0;
+        gap:8px;
+    }
+
+    .product-mode-btn{
+        padding:9px 17px;
+        font-size:13px;
+    }
+
+}
+
+/* =========================================================
+   GLOBAL PRODUCT CARD
+   Semua daftar produk mengikuti tampilan PRODUK TERKAIT
+========================================================= */
+
+.product-card{
+    width:100%;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    cursor:pointer;
+    transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 16px rgba(0,0,0,.11);
+}
+
+.product-card-image{
+    width:100%;
+    aspect-ratio:1 / 1;
+    background:#f7f7f7;
+    overflow:hidden;
+}
+
+.product-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.product-card-info{
+    padding:12px;
+}
+
+.product-card-brand{
+    font-size:11px;
+    color:#777;
+    margin-bottom:4px;
+    min-height:13px;
+}
+
+.product-card-name{
+    font-size:14px;
+    font-weight:700;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.product-card-category{
+    font-size:11px;
+    color:#777;
+    margin-top:4px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.product-card-price{
+    color:#0E1F4D;
+    font-size:14px;
+    font-weight:800;
+    margin-top:7px;
+}
+
+.product-card-price span{
+    font-weight:700;
+}
+
+/* Index: card di dalam swiper */
+.bestSellerSwiper .swiper-slide .product-card,
+.newProductSwiper .swiper-slide .product-card{
+    height:100%;
+}
+
+/* All Products: grid */
+.all-products-page .products{
+    align-items:stretch;
+}
+
+.all-products-page .product-card{
+    height:100%;
+}
+
+@media(max-width:768px){
+
+    .product-card-info{
+        padding:9px;
+    }
+
+    .product-card-brand{
+        font-size:10px;
+    }
+
+    .product-card-name{
+        font-size:13px;
+    }
+
+    .product-card-category{
+        font-size:10px;
+    }
+
+    .product-card-price{
+        font-size:13px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .product-card-info{
+        padding:8px;
+    }
+
+    .product-card-name{
+        font-size:12px;
+    }
+
+    .product-card-price{
+        font-size:12px;
+    }
+
+}
+
+
+/* =========================================================
+   WISHLIST PADA SETIAP PRODUCT CARD
+========================================================= */
+
+.all-products-page .product-card-image{
+    position:relative;
+}
+
+.all-products-page .product-card-wishlist{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:36px;
+    height:36px;
+    border:0;
+    border-radius:50%;
+    background:rgba(255,255,255,.96);
+    color:#666;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index:3;
+    font-size:17px;
+    transition:.2s ease;
+}
+
+.all-products-page .product-card-wishlist:hover{
+    transform:scale(1.06);
+}
+
+.all-products-page .product-card-wishlist.active{
+    color:#e53935;
+}
+
+@media(max-width:768px){
+    .all-products-page .product-card-wishlist{
+        width:32px;
+        height:32px;
+        top:7px;
+        right:7px;
+        font-size:15px;
+    }
+}
+
+
+/* =========================================================
+   BREADCRUMB
+   Mengikuti gaya Product Page
+========================================================= */
+
+.all-products-breadcrumb{
+    width:95%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:18px 0 4px;
+
+    display:flex;
+    align-items:center;
+    gap:9px;
+
+    font-size:13px;
+}
+
+.all-products-breadcrumb a{
+    color:#0E1F4D;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.all-products-breadcrumb a:hover{
+    text-decoration:underline;
+}
+
+.all-products-breadcrumb i{
+    color:#999;
+    font-size:10px;
+}
+
+.all-products-breadcrumb span{
+    color:#777;
+    font-weight:500;
+}
+
+@media(max-width:768px){
+
+    .all-products-breadcrumb{
+        width:94%;
+        padding:14px 0 2px;
+        font-size:12px;
+        gap:7px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .all-products-breadcrumb{
+        width:92%;
+        font-size:11px;
+    }
+
+}
+
+/* Card is a direct Product Page link */
+.all-products-page .product-card{cursor:pointer;}
+
+
+/* Back navigation: arrow only */
+.all-products-page-back{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    margin:8px 0 0 2.5%;
+    padding:0;
+    border:0;
+    border-radius:50%;
+    background:#fff;
+    color:#0E1F4D;
+    font-size:18px;
+    cursor:pointer;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.all-products-page-back:hover{background:#0E1F4D;color:#fff;}
+@media(max-width:768px){.all-products-page-back{margin-left:3%;}}

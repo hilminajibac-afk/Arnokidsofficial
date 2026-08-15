@@ -1,0 +1,31 @@
+/* ===========================
+   TOAST
+=========================== */
+
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:-100px;
+    transform:translateX(-50%);
+    background:#1e293b;
+    color:#fff;
+    padding:14px 18px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:15px;
+    z-index:9999;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.35s;
+    opacity:0;
+}
+
+.toast.show{
+    bottom:90px;
+    opacity:1;
+}
+
+.toast i{
+    color:#22c55e;
+}

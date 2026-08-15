@@ -1,0 +1,188 @@
+/* ==========================
+PROFILE BACK BUTTON
+========================== */
+.auth-box{
+    position:relative;
+}
+
+.profile-back-btn{
+    position:absolute !important;
+    top:18px !important;
+    left:18px !important;
+    width:42px !important;
+    height:42px !important;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 !important;
+    background:transparent !important;
+    color:#0E1F4D !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    font-size:22px !important;
+    cursor:pointer;
+    box-shadow:none !important;
+}
+
+.profile-back-btn:hover{
+    background:transparent !important;
+    color:#F59E0B !important;
+}
+
+/* ==========================
+PROFILE HEADER
+========================== */
+
+.profile-header{
+
+text-align:center;
+
+margin:25px 0 35px;
+
+}
+
+.profile-avatar{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+border-radius:50%;
+
+background:#0E1F4D;
+
+color:#fff;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:38px;
+
+margin-bottom:18px;
+
+}
+
+.profile-header h2{
+
+margin-bottom:8px;
+
+color:#0E1F4D;
+
+}
+
+.profile-header p{
+
+color:#777;
+
+font-size:14px;
+
+}
+
+/* ==========================
+PROFILE MENU
+========================== */
+
+.profile-menu{
+
+display:flex;
+
+flex-direction:column;
+
+gap:12px;
+
+margin-bottom:25px;
+
+}
+
+.profile-menu a{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:18px;
+
+background:#f7f7f7;
+
+border-radius:14px;
+
+text-decoration:none;
+
+color:#222;
+
+transition:.25s;
+
+}
+
+.profile-menu a:hover{
+
+background:#eef5ff;
+
+}
+
+.profile-menu span{
+
+flex:1;
+
+margin-left:16px;
+
+font-weight:500;
+
+}
+
+.profile-menu a i:first-child{
+
+color:#0E1F4D;
+
+font-size:18px;
+
+width:22px;
+
+text-align:center;
+
+}
+
+.profile-menu a i:last-child{
+
+color:#aaa;
+
+}
+
+.profile-item{
+
+    margin-bottom:18px;
+
+}
+
+.profile-item label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    font-size:13px;
+
+    color:#777;
+
+}
+
+.profile-item div{
+
+    background:#f7f7f7;
+
+    border-radius:12px;
+
+    padding:14px;
+
+    font-size:15px;
+
+    color:#222;
+
+}

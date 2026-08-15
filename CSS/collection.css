@@ -1,0 +1,34 @@
+/* =========================================================
+   KOLEKSI ARNOKIDS
+========================================================= */
+
+.collection-products{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:18px;
+}
+
+.collection-products .product-card{
+    height:100%;
+}
+
+@media(max-width:1000px){
+    .collection-products{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+        gap:15px;
+    }
+}
+
+@media(max-width:768px){
+    .collection-products{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+    }
+}
+
+@media(max-width:480px){
+    .collection-products{
+        gap:10px;
+    }
+}

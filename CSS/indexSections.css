@@ -1,0 +1,23 @@
+/* =========================================================
+   INDEX SECTION BADGES
+   Disamakan dengan badge di allProducts.html
+========================================================= */
+
+.index-section-badge{
+    display:inline-flex;
+    align-items:center;
+    width:fit-content;
+    padding:9px 16px;
+    background:#0E1F4D;
+    color:#FFCF00;
+    border-radius:8px;
+    font-size:15px;
+    font-weight:700;
+}
+
+@media(max-width:768px){
+    .index-section-badge{
+        padding:8px 12px;
+        font-size:13px;
+    }
+}

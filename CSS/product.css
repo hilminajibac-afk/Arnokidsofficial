@@ -1,0 +1,400 @@
+/* ===========================
+   ALL PRODUCTS
+=========================== */
+
+.all-products{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+}
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+/* Footer HP disembunyikan di desktop */
+.mobile-footer{
+    display: none;
+}
+
+
+
+
+.categories{
+    display:flex;
+    gap:10px;
+    padding:15px;
+    overflow:auto;
+}
+
+.categories button{
+    padding:10px 18px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    cursor:pointer;
+}
+
+.categories button:hover{
+    background:#112E81;
+    color:white;
+}
+
+#categoryButtons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.category-btn{
+
+    height:48px;
+
+    padding:0 18px;
+
+    border:2px solid #e5e7eb;
+
+    background:white;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    color:#374151;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.25s;
+
+}
+
+.category-btn:hover{
+
+    border-color:#0E1F4D;
+
+}
+
+/* =========================
+   Brand Section
+========================= */
+
+.brand-section{
+    margin:24px 15px 15px;
+    padding:18px;
+    background:#fff;
+    border-radius:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.brand-title{
+    text-align:center;
+    font-size:18px;
+    color:#0E1F4D;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.brand-filter button{
+    padding:10px 18px;
+    border:none;
+    border-radius:30px;
+    background:#f1f3f6;
+    color:#0E1F4D;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.brand-filter button:hover{
+    background:#0E1F4D;
+    color:#fff;
+}
+
+.brand-filter button.active{
+    background:#0E1F4D;
+    color:#fff;
+}
+
+.brands{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding:10px;
+}
+
+.brands button{
+    white-space:nowrap;
+}
+
+.brand-filter{
+flex-wrap:wrap;
+display:flex;
+gap:8px;
+overflow:auto;
+}
+
+.category-filter{
+display:flex;
+gap:8px;
+overflow:auto;
+margin-top:10px;
+}
+
+.products{
+
+padding:20px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.card{
+    width:100%;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+}
+
+.info{
+
+padding:15px;
+
+}
+
+.name{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+
+.price{
+    color:#0B1849;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.satuan{
+    color:#0B1849;
+    font-size:14px;
+    font-weight:normal;
+}
+
+.check{
+    width:100%;
+    padding:10px;
+    background:#112E81;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.purchase-option{
+    margin-top:20px;
+}
+
+.purchase-option h4{
+    margin-bottom:10px;
+}
+
+.purchase-option label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px;
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card-image{
+    position:relative;
+}
+
+.wishlist-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+
+    background:none;
+    border:none;
+
+    padding:5px;
+
+    font-size:24px;
+
+    color:#13285f;
+
+    cursor:pointer;
+
+    z-index:20;
+
+    transition:.2s;
+}
+
+.wishlist-btn:hover{
+    transform:scale(1.15);
+}
+
+.wishlist-btn.active{
+    color:#ff3b5c;
+}
+
+.wishlist-btn.active i{
+    color:#ff3b5c;
+}
+
+/* =========================================================
+   GLOBAL PRODUCT CARD
+   Semua daftar produk mengikuti tampilan PRODUK TERKAIT
+========================================================= */
+
+.product-card{
+    width:100%;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    cursor:pointer;
+    transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 16px rgba(0,0,0,.11);
+}
+
+.product-card-image{
+    width:100%;
+    aspect-ratio:1 / 1;
+    background:#f7f7f7;
+    overflow:hidden;
+}
+
+.product-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.product-card-info{
+    padding:12px;
+}
+
+.product-card-brand{
+    font-size:11px;
+    color:#777;
+    margin-bottom:4px;
+    min-height:13px;
+}
+
+.product-card-name{
+    font-size:14px;
+    font-weight:700;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.product-card-category{
+    font-size:11px;
+    color:#777;
+    margin-top:4px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.product-card-price{
+    color:#0E1F4D;
+    font-size:14px;
+    font-weight:800;
+    margin-top:7px;
+}
+
+.product-card-price span{
+    font-weight:700;
+}
+
+/* Index: card di dalam swiper */
+.bestSellerSwiper .swiper-slide .product-card,
+.newProductSwiper .swiper-slide .product-card{
+    height:100%;
+}
+
+/* All Products: grid */
+.all-products-page .products{
+    align-items:stretch;
+}
+
+.all-products-page .product-card{
+    height:100%;
+}
+
+@media(max-width:768px){
+
+    .product-card-info{
+        padding:9px;
+    }
+
+    .product-card-brand{
+        font-size:10px;
+    }
+
+    .product-card-name{
+        font-size:13px;
+    }
+
+    .product-card-category{
+        font-size:10px;
+    }
+
+    .product-card-price{
+        font-size:13px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .product-card-info{
+        padding:8px;
+    }
+
+    .product-card-name{
+        font-size:12px;
+    }
+
+    .product-card-price{
+        font-size:12px;
+    }
+
+}

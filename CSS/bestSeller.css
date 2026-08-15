@@ -1,0 +1,272 @@
+
+/* =========================
+   BEST SELLER
+========================= */
+
+.bestSellerSwiper{
+
+    overflow:hidden;
+
+    cursor:grab;
+
+    padding:5px 2px 10px;
+
+}
+
+.bestSellerSwiper .swiper-wrapper{
+
+    align-items:stretch;
+
+}
+
+.bestSellerSwiper .swiper-slide{
+
+    height:auto;
+    display:flex;
+
+}
+
+.bestSellerSwiper .card{
+
+    width:100%;
+
+}
+
+
+.bestSellerSwiper:active{
+
+    cursor:grabbing;
+
+}
+.best-seller{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:40px auto;
+
+}
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+.section-header h2{
+
+    margin-top:10px;
+
+    color:#0E1F4B;
+
+    font-size:30px;
+
+}
+.section-badge{
+
+    background:#FFE7C2;
+
+    color:#F28C00;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+.see-all{
+
+    color:#0E1F4B;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+/* =========================
+   PRODUK TERBARU
+========================= */
+
+.new-products {
+    margin-top: 35px;
+}
+
+/* =========================================================
+   GLOBAL PRODUCT CARD
+   Semua daftar produk mengikuti tampilan PRODUK TERKAIT
+========================================================= */
+
+.product-card{
+    width:100%;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    cursor:pointer;
+    transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 16px rgba(0,0,0,.11);
+}
+
+.product-card-image{
+    width:100%;
+    aspect-ratio:1 / 1;
+    background:#f7f7f7;
+    overflow:hidden;
+}
+
+.product-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.product-card-info{
+    padding:12px;
+}
+
+.product-card-brand{
+    font-size:11px;
+    color:#777;
+    margin-bottom:4px;
+    min-height:13px;
+}
+
+.product-card-name{
+    font-size:14px;
+    font-weight:700;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.product-card-category{
+    font-size:11px;
+    color:#777;
+    margin-top:4px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.product-card-price{
+    color:#0E1F4D;
+    font-size:14px;
+    font-weight:800;
+    margin-top:7px;
+}
+
+.product-card-price span{
+    font-weight:700;
+}
+
+/* Index: card di dalam swiper */
+.bestSellerSwiper .swiper-slide .product-card,
+.newProductSwiper .swiper-slide .product-card{
+    height:100%;
+}
+
+/* All Products: grid */
+.all-products-page .products{
+    align-items:stretch;
+}
+
+.all-products-page .product-card{
+    height:100%;
+}
+
+@media(max-width:768px){
+
+    .product-card-info{
+        padding:9px;
+    }
+
+    .product-card-brand{
+        font-size:10px;
+    }
+
+    .product-card-name{
+        font-size:13px;
+    }
+
+    .product-card-category{
+        font-size:10px;
+    }
+
+    .product-card-price{
+        font-size:13px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .product-card-info{
+        padding:8px;
+    }
+
+    .product-card-name{
+        font-size:12px;
+    }
+
+    .product-card-price{
+        font-size:12px;
+    }
+
+}
+
+/* WISHLIST DI SETIAP CARD PRODUK */
+.product-card-image{
+    position:relative;
+}
+
+.product-card-wishlist{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:36px;
+    height:36px;
+    border:0;
+    border-radius:50%;
+    background:rgba(255,255,255,.96);
+    color:#666;
+    box-shadow:0 2px 8px rgba(0,0,0,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index:3;
+    font-size:17px;
+    transition:.2s ease;
+}
+
+.product-card-wishlist:hover{
+    transform:scale(1.06);
+}
+
+.product-card-wishlist.active{
+    color:#e53935;
+}
+
+@media(max-width:768px){
+    .product-card-wishlist{
+        width:32px;
+        height:32px;
+        top:7px;
+        right:7px;
+        font-size:15px;
+    }
+}
+
