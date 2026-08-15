@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Daftar ARNOKIDS</title>
+
+<link rel="stylesheet" href="css/auth.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/toast.css">
+</head>
+
+<body>
+
+<div id="toast" class="toast"><i class="fa-solid fa-circle-check"></i><span id="toastText"></span></div>
+
+<div class="auth-box">
+    
+<a href="index.html" class="back-btn">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
+<img src="images/logo.png" class="auth-logo">
+
+<h2>Daftar Akun</h2>
+
+<form id="registerForm">
+
+<input
+type="text"
+id="nama"
+placeholder="Nama Lengkap"
+required>
+
+<input
+type="text"
+id="email"
+placeholder="Email Aktif"
+required>
+
+<input
+type="text"
+id="whatsapp"
+placeholder="Nomor WhatsApp"
+required>
+
+<input
+type="text"
+id="kota"
+placeholder="Kota Asal"
+required>
+
+<select id="tipe">
+
+<option value="">Pilih Jenis Jualan</option>
+
+<option>Online</option>
+
+<option>Offline</option>
+
+<option>Online & Offline</option>
+
+</select>
+
+<div class="password-box">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password">
+
+    <i class="fa-regular fa-eye toggle-password"></i>
+
+</div>
+<div class="password-box">
+
+    <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Konfirmasi Password">
+
+    <i class="fa-regular fa-eye toggle-password"></i>
+
+</div>
+<button type="submit">
+
+Daftar
+
+</button>
+
+</form>
+
+<p>
+
+Sudah punya akun?
+
+<a href="login.html">
+
+Masuk
+
+</a>
+
+</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/supabase.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/register.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

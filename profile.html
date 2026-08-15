@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profil Saya | ARNOKIDS</title>
+
+<link rel="stylesheet" href="css/auth.css">
+<link rel="stylesheet" href="css/profile.css">
+<link rel="stylesheet" href="css/userPages.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/toast.css">
+</head>
+
+<body>
+
+<div id="toast" class="toast"><i class="fa-solid fa-circle-check"></i><span id="toastText"></span></div>
+
+<div class="auth-box">
+
+<button type="button" class="profile-back-btn" onclick="goBackPage()" aria-label="Kembali">
+<i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<img src="images/logo.png" class="auth-logo">
+
+<div class="profile-header">
+
+<div class="profile-avatar">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+<h2 id="profileNama">
+
+Loading...
+
+</h2>
+
+<p id="profileWhatsapp">
+
+Loading...
+
+</p>
+
+</div>
+
+<div class="profile-menu">
+
+<a href="edit-profile.html">
+
+<i class="fa-solid fa-user-pen"></i>
+
+<span>Edit Profil</span>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</a>
+
+<a href="wishlist.html" class="menu-item">
+
+    <i class="fa-regular fa-heart"></i>
+
+    <span>Wishlist Saya</span>
+
+    <i class="fas fa-chevron-right"></i>
+
+</a>
+
+<a href="cart.html?from=profile">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span>Keranjang Saya</span>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</a>
+
+<a href="order-history.html">
+
+<i class="fa-solid fa-box"></i>
+
+<span>Riwayat Pesanan</span>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</a>
+
+<a href="addresses.html">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<span>Alamat Saya</span>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</a>
+
+<a href="settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+<span>Pengaturan</span>
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</a>
+
+</div>
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Keluar
+
+</button>
+
+</div>
+<nav class="bottom-nav"><a class="nav-item" href="index.html"><i class="fa-solid fa-house"></i><span>Beranda</span></a><a class="nav-item" href="index.html#search"><i class="fa-solid fa-magnifying-glass"></i><span>Cari</span></a><a class="nav-item" href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>Keranjang</span></a><a class="nav-item" href="wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a><a class="nav-item active" href="profile.html"><i class="fa-solid fa-user"></i><span>Profil</span></a></nav>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/supabase.js"></script>
+
+<script>
+function goBackPage(){ if(history.length > 1) history.back(); else location.href="index.html"; }
+</script>
+<script src="js/toast.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ARNOKID'S</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sidebarMobile.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/bestSeller.css">
+<link rel="stylesheet" href="css/headerMobile.css">
+
+<link rel="stylesheet" href="css/sidebarMobile.css">
+
+<link rel="stylesheet" href="css/banner.css">
+<link rel="stylesheet" href="css/brandPopular.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/modal.css">
+<link rel="stylesheet" href="css/cart.css">
+<link rel="stylesheet" href="css/filter.css">
+<link rel="stylesheet" href="css/desktop.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/bottomNavigation.css">
+<link rel="stylesheet" href="css/toast.css">
+<link rel="stylesheet" href="css/floating.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/allProducts.css">
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+<body>
+<div class="wrapper">
+<!-- Overlay -->
+<div id="overlay"></div>
+
+<!-- Sidebar -->
+<aside id="sidebar"> <!-- sidebar Header mobile -->
+
+    <div class="sidebar-header"> <!-- sidebar Header --> <!-- beres -->
+        <button id="closeSidebar" class="close-sidebar">  <!-- sidebar Header -->  <!-- beres -->
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <img src="images/logo.png">
+        <h3>ARNOKIDS</h3>
+        <p>Kualitas Terbaik Harga Pabrik</p>
+    </div>
+
+    <div class="sidebar-menu">  <!-- sidebar Header mobile -->
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Beranda</span>
+        </a>
+
+        <button class="accordion"> <!-- beres -->
+            <span>
+                <i class="fa-solid fa-shirt"></i>
+                Brand
+            </span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="panel" id="brandMenu"></div><!-- beres -->
+
+        <button class="accordion"> <!-- beres -->
+            <span>
+                <i class="fa-solid fa-layer-group"></i>
+                Kategori
+            </span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="panel" id="categoryMenu"></div><!-- beres -->
+
+        <a href="#" id="mobileNewProductsBtn">
+            <i class="fa-solid fa-star"></i>
+            <span>Produk Terbaru</span>
+        </a>
+
+        <a href="#" id="mobileAllProductsBtn">
+    <i class="fa-solid fa-box-open"></i>
+    <span>Semua Produk</span>
+</a>
+
+        <a href="#" id="aboutBtn"> <!-- beres -->
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Tentang Kami</span>
+        </a>
+    </div>
+
+</aside>
+
+<!-- =========================
+TOP BAR
+========================= -->
+<div class="topbar"> <!-- beres -->
+
+    <div class="container">
+
+        <div class="top-left">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Kualitas Terbaik Harga Pabrik</span>
+        </div>
+
+        <div class="top-right">
+
+         <a href="javascript:void(0)" onclick="window.open(MAP_URL,'_blank')">
+    <i class="fa-solid fa-location-dot"></i>
+    Alamat
+</a>
+
+            <a href="https://wa.me/628135772723">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+HEADER oke
+========================= -->
+
+<header class="main-header"> <!-- Header Desktop --> <!-- beres -->
+
+    <div class="container header-row">
+
+        <a href="index.html" class="logo"> <!-- Logo -->
+            <img src="images/logo.png" alt="ARNOKIDS"> <!-- Logo -->
+        </a>
+        
+        <div class="search-area"> <!-- Search -->
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari produk anak...">
+
+            <button>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+        <div class="header-menu"> <!-- Menu Samping search-->
+
+           
+
+            <a href="wishlist.html" class="desktop-wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span id="wishlist-count"></span>
+            </a>
+
+            <a href="javascript:void(0)" onclick="toggleCart()" class="desktop-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count"></span>
+            </a>
+                    
+            <a href="login.html" class="seller-btn" id="desktopUserBtn">
+                <span>Masuk</span>
+            </a>
+
+                </div>
+
+    </div>
+
+</header> <!-- Sampai sini Header Desktop --> <!-- beres -->
+
+<!-- =========================
+NAVIGATION OKE
+========================= -->
+
+<nav class="desktop-nav"> <!-- beres -->
+
+<div class="container">
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+Beranda
+</a>
+
+<div class="desktop-dropdown">
+
+<button class="desktop-dropbtn" id="desktopBrandBtn">
+    <i class="fa-solid fa-shirt"></i>
+    <span>Brand</span>
+    <i class="fa-solid fa-chevron-down"></i>
+</button>
+
+<div class="desktop-dropdown-menu" id="desktopBrandMenu"></div>
+
+</div>
+
+<div class="desktop-dropdown">
+
+<button class="desktop-dropbtn" id="desktopCategoryBtn">
+    <i class="fa-solid fa-layer-group"></i>
+    <span>Kategori</span>
+    <i class="fa-solid fa-chevron-down"></i>
+</button>
+
+<div class="desktop-dropdown-menu" id="desktopCategoryMenu"></div>
+
+</div>
+
+<a href="#" id="newProductsNavBtn">
+<i class="fa-solid fa-star"></i>
+Produk Terbaru
+</a>
+
+<a href="#products" id="allProductsBtn">
+    <i class="fa-solid fa-box-open"></i>
+    Semua Produk
+</a>
+
+</div>
+
+</nav> <!-- beres --> 
+
+<!-- =========================
+MOBILE HEADER OKE (CSS DI RESPONSIVE.CSS SEMUA)
+========================= -->
+
+<header class="mobile-header"><!-- beres --> 
+
+    <div class="mobile-left"><!-- beres --> 
+        <button id="menuBtn" class="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <a href="index.html" class="mobile-logo-wrap">
+        <img src="images/logo.png" class="mobile-logo">
+    </a>
+
+   <div class="mobile-right"><!-- beres --> 
+        <button id="filterBtn" class="mobile-btn">
+            <i class="fa-solid fa-sliders"></i>
+        </button>
+    </div>
+
+    <div class="mobile-search-box"><!-- beres --> 
+        <input
+            type="text"
+            id="mobileSearch"
+            placeholder="Cari produk...">
+
+        <button id="clearSearch" class="clear-search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+</header><!-- beres --> 
+
+
+
+<!-- =========================
+     MODE PRODUK
+     ========================= -->
+<div class="product-mode-nav">
+
+    <button
+        type="button"
+        class="product-mode-btn active"
+        data-mode="all">
+        Semua Produk
+    </button>
+
+    <button
+        type="button"
+        class="product-mode-btn"
+        data-mode="best">
+        Best Seller
+    </button>
+
+    <button
+        type="button"
+        class="product-mode-btn"
+        data-mode="new">
+        Produk Terbaru
+    </button>
+
+</div>
+
+<!-- =========================
+BEST SELLER
+========================= -->
+<main class="all-products-page">
+<button type="button" class="all-products-page-back" onclick="goBackPage()" aria-label="Kembali">
+    <i class="fa-solid fa-arrow-left"></i>
+</button>
+
+<section class="best-seller all-page-section" id="bestSellerSection">
+
+    <div class="section-header">
+        <span class="section-badge">🔥 BEST SELLER</span>
+        <span class="product-count" id="bestSellerCount">0 produk</span>
+    </div>
+
+    <div id="bestSellerProducts" class="products"></div>
+
+</section>
+
+<!-- =========================
+PRODUK TERBARU
+========================= -->
+<section class="new-products all-page-section" id="newProductsSection">
+
+    <div class="section-header">
+        <span class="section-badge">✨ PRODUK TERBARU</span>
+        <span class="product-count" id="newProductCount">0 produk</span>
+    </div>
+
+    <div id="newProductList" class="products"></div>
+
+</section>
+<!-- =========================
+SEMUA PRODUK
+========================= -->
+<section class="all-products all-page-section" id="allProducts">
+    <div class="section-header">
+        <span class="section-badge">🛍️ SEMUA PRODUK</span>
+        <span class="product-count" id="productCount">0 produk</span>
+    </div>
+    <div id="products" class="products"></div>
+</section>
+
+</main>
+
+
+<!-- =========================
+FILTER MOBILE SEBELAH LOGO CSS DI filter.css
+========================= -->
+<div id="filterModal" class="filter-modal">
+    <div class="filter-content">
+        <div class="filter-header">
+            <h3>Filter Produk</h3>
+            <button id="closeFilter">
+            <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="filter-body">
+            <label>
+                <input type="radio" name="sort" value="az" checked>
+                Nama A-Z
+            </label>
+
+            <label>
+                <input type="radio" name="sort" value="za">
+                Nama Z-A
+            </label>
+
+            <label>
+                <input type="radio" name="sort" value="murah">
+                Harga Termurah
+            </label>
+
+            <label>
+                <input type="radio" name="sort" value="mahal">
+                Harga Termahal
+            </label>
+        </div>
+
+        <div class="filter-footer">
+            <button id="applyFilter">
+                Terapkan
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- =========================
+MODAL PRODUCT CSS DI modal.css
+========================= -->
+<div id="productModal" class="modal"><!-- beres -->
+    <div class="modal-content"><!-- ini animasinya ada di header.css -->
+        <span id="closeModal">&times;</span>
+        <img id="modalImage">
+        <video id="modalVideo" controls></video>
+        <h2 id="modalTitle"></h2>
+        <div id="modalPrice"></div>
+        <p id="modalDesc"></p>
+        <h3>Jumlah Lusin</h3>
+
+        <div class="qty-box">
+            <button id="minusQty">-</button>
+            <input id="qty" type="text" value="1" readonly>
+            <span class="unit">Lusin</span>
+            <button id="plusQty">+</button>
+        </div>
+
+        <button id="modalSelect">
+            Tambah ke Keranjang
+        </button>
+    </div>
+</div>
+
+<!-- =========================
+BOTTOM NAV MOBILE  CSS ADA DI bottomNavigation.css
+========================= -->
+<nav class="bottom-nav"><!-- beres -->
+    <a href="#" class="nav-item active"><!-- beres -->
+        <i class="fa-solid fa-house"></i>
+        <span>Beranda</span>
+    </a>
+
+    <a href="#" id="bottomSearch" class="nav-item"><!-- beres -->
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Cari</span>
+    </a>
+
+    <a href="#" onclick="toggleCart()" class="nav-item"><!-- beres -->
+        <div class="bottom-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div id="bottom-cart-count">0</div>
+        </div>
+        <span>Keranjang</span>
+    </a>
+
+    <a class="nav-item" href="javascript:void(0)" onclick="openWishlist()"><!-- beres -->
+        <div class="bottom-wishlist">
+            <i class="fa-regular fa-heart"></i>
+            <div id="bottom-wishlist-count"></div>
+        </div>
+        <span>Wishlist</span>
+    </a>
+    
+    <a href="profile.html" class="nav-item" id="bottomUser"><!-- beres -->
+        <i class="fa-regular fa-user"></i>
+        <span>Akun</span>
+    </a>
+</nav><!-- beres -->
+
+<!-- =========================
+TOAST CSS ADA DI toast.css
+========================= -->
+<div id="toast" class="toast"><!-- beres -->
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastText">Produk berhasil ditambahkan</span>
+</div><!-- beres -->
+
+<!-- =========================
+FLOATING CSS ADA DI floating.css
+========================= -->
+<div class="floating-social"><!-- beres -->
+
+    <button class="cs-btn" onclick="toggleSocial()"><!-- beres -->
+        <i class="fa-solid fa-headset"></i>
+    </button>
+
+    <div class="social-list"><!-- beres -->
+        <a href="https://wa.me/628135772723" class="wa" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://instagram.com/arnokids.official/" class="ig" target="_blank"><!-- beres -->
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://tiktok.com/@arnokids.official/" class="tt" target="_blank"><!-- beres -->
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+    </div><!-- beres -->
+
+</div>
+
+</div><!-- PENUTUP WRAPPER DIATAS SETELAH <body> -->
+
+<!-- =========================
+FOOTER DESKTOP CSS ADA DI footer.css
+========================= -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-header">
+            <img src="images/logo.png" class="footer-logo">
+            <div class="footer-slogan">
+                Kualitas Terbaik • Harga Pabrik • Kirim ke Seluruh Indonesia
+            </div>
+        </div>
+
+        <div class="footer-body">
+            <div class="footer-about">
+                <p>
+                    ARNOKIDS merupakan distributor dan supplier
+                    baju anak berkualitas dengan harga pabrik
+                    yang melayani reseller, dropshipper,
+                    serta pembelian grosir ke seluruh Indonesia.
+
+                    Kami berkomitmen menghadirkan produk terbaik
+                    dengan pelayanan cepat, aman dan terpercaya.
+                </p>
+            </div>
+
+            <div class="footer-menu">
+                <div>
+                    <h4>Informasi</h4>
+                    <a href="#">Tentang Kami</a>
+                    <a href="javascript:void(0)" onclick="window.open(MAP_URL,'_blank')">
+                        Alamat
+                    </a>
+                    <a href="#">Kontak</a>
+                    <a href="#">FAQ</a>
+                </div>
+
+                <div>
+                    <h4>Bantuan</h4>
+                    <a href="#">Cara Order</a>
+                    <a href="#">Pembayaran</a>
+                    <a href="#">Pengiriman</a>
+                    <a href="#">Retur</a>
+                </div>
+
+                <div>
+                    <h4>Jadi Seller</h4>
+                    <a href="#">Daftar Reseller</a>
+                    <a href="#">Dropship</a>
+                    <a href="#">Keuntungan</a>
+                    <a href="#">Syarat Seller</a>
+                </div>
+
+                <div>
+                    <h4>Ikuti Kami</h4>
+                    <a href="https://wa.me/628135772723"><i class="fab fa-whatsapp"></i> +628135772723</a>
+                    <a href="https://tiktok.com/arnokids.official/"><i class="fab fa-instagram"></i> arnokids.official</a>
+                    <a href="https://tiktok.com/@arnokids.official/"><i class="fab fa-tiktok"></i> arnokids.official</a>
+                    <a href="https://www.facebook.com/arnokids.official/"><i class="fa-brands fa-facebook"></i> arnokids.official</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- =========================
+FOOTER MOBILE CSS ADA DI responsive.css
+========================= -->
+<footer class="mobile-footer">
+
+    <img src="images/logo.png" class="mf-logo" alt="ARNOKIDS">
+
+    <p>
+        Distributor & supplier baju anak berkualitas dengan harga pabrik.
+        Melayani reseller, dropshipper dan grosir ke seluruh Indonesia.
+    </p>
+
+    <!-- INFORMASI -->
+    <button class="footer-btn">
+        <span>Informasi</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="footer-panel">
+        <a href="#">Tentang Kami</a>
+        <a href="javascript:void(0)" onclick="window.open(MAP_URL,'_blank')">
+                 Alamat
+        </a>
+        <a href="#">Kontak</a>
+        <a href="#">FAQ</a>
+    </div>
+
+    <!-- BANTUAN -->
+    <button class="footer-btn">
+        <span>Bantuan</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="footer-panel">
+        <a href="#">Cara Order</a>
+        <a href="#">Pembayaran</a>
+        <a href="#">Pengiriman</a>
+        <a href="#">Retur</a>
+    </div>
+
+    <!-- JADI SELLER -->
+    <button class="footer-btn">
+        <span>Jadi Seller</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="footer-panel">
+        <a href="#">Daftar Reseller</a>
+        <a href="#">Dropship</a>
+        <a href="#">Keuntungan</a>
+        <a href="#">Syarat Seller</a>
+    </div>
+
+    <!-- IKUTI KAMI -->
+    <button class="footer-btn">
+        <span>Ikuti Kami</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="footer-panel">
+        <a href="https://wa.me/628135772723"><i class="fab fa-whatsapp"></i> +628135772723</a>
+        <a href="https://instagram.com/arnokids.official/"><i class="fab fa-instagram"></i> arnokids.official</a>
+        <a href="https://tiktok.com/@arnokids.official/"><i class="fab fa-tiktok"></i> arnokids.official</a>
+        <a href="https://www.facebook.com/arnokids.official/"><i class="fa-brands fa-facebook"></i> arnokids.official</a>
+    </div>
+
+    <div class="mobile-copy">
+        © 2026 ARNOKID'S • All Rights Reserved.
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/supabase.js"></script>
+<script src="js/requireAuth.js"></script>
+
+<script src="js/userHeader.js"></script>
+
+<script src="js/config.js"></script>
+
+<script src="js/wishlist.js"></script>
+
+<script src="js/renderAllProduct.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/cart.js"></script>
+
+
+<script src="js/search.js"></script>
+
+<script src="js/category.js"></script>
+
+<script src="js/loadProducts.js"></script>
+<script src="js/loadBestSeller.js"></script>
+<script src="js/loadNewProducts.js"></script>
+
+<script src="js/loadBrands.js"></script>
+
+<script src="js/loadCategories.js"></script>
+
+<script>
+
+document.getElementById("filterBtn").onclick = function(){
+
+    document.getElementById("filterModal").classList.add("show");
+
+}
+
+document.getElementById("closeFilter").onclick = function(){
+
+    document.getElementById("filterModal").classList.remove("show");
+
+}
+
+document.getElementById("applyFilter").onclick = function(){
+
+    currentSort = document.querySelector(
+        'input[name="sort"]:checked'
+    ).value;
+
+    applyFilter();
+
+    document.getElementById("filterModal")
+    .classList.remove("show");
+
+}
+
+</script>
+
+<script src="js/app.js"></script>
+
+<script>function goBackPage(){if(history.length>1)history.back();else location.href="index.html";}</script>
+<script src="js/allProductsFilter.js"></script>
+
+<script>
+document.querySelectorAll(".footer-btn").forEach(btn=>{
+
+    btn.addEventListener("click",()=>{
+
+        const panel=btn.nextElementSibling;
+
+        document.querySelectorAll(".footer-panel").forEach(p=>{
+
+            if(p!==panel)p.classList.remove("show");
+
+        });
+
+        panel.classList.toggle("show");
+
+        document.querySelectorAll(".footer-btn i").forEach(icon=>{
+
+            if(icon!==btn.querySelector("i"))
+                icon.style.transform="rotate(0deg)";
+
+        });
+
+        const icon=btn.querySelector("i");
+
+        if(panel.classList.contains("show")){
+            icon.style.transform="rotate(180deg)";
+        }else{
+            icon.style.transform="rotate(0deg)";
+        }
+
+    });
+
+});
+</script>
+<script>
+
+const modeButtons =
+    document.querySelectorAll(".product-mode-btn");
+
+const allProductsSection =
+    document.getElementById("allProducts");
+
+const bestSellerSection =
+    document.getElementById("bestSellerSection");
+
+const newProductsSection =
+    document.getElementById("newProductsSection");
+
+
+function showProductMode(mode){
+
+    /* Semua section disembunyikan */
+
+    allProductsSection.style.display = "none";
+    bestSellerSection.style.display = "none";
+    newProductsSection.style.display = "none";
+
+
+    /* Tampilkan sesuai mode */
+
+    if(mode === "all"){
+
+        allProductsSection.style.display = "block";
+
+    }
+
+    if(mode === "best"){
+
+        bestSellerSection.style.display = "block";
+
+    }
+
+    if(mode === "new"){
+
+        newProductsSection.style.display = "block";
+
+    }
+
+
+    /* Tombol aktif */
+
+    modeButtons.forEach(button => {
+
+        button.classList.remove("active");
+
+    });
+
+
+    document
+        .querySelector(
+            `[data-mode="${mode}"]`
+        )
+        ?.classList.add("active");
+
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+modeButtons.forEach(button => {
+
+    button.addEventListener("click", function(){
+
+        const mode =
+            this.dataset.mode;
+
+        showProductMode(mode);
+
+    });
+
+});
+
+
+/* =========================
+   CEK LOGIN + MODE URL
+========================= */
+
+async function initAllProductsPage(){
+
+    const {
+        data: { session }
+    } = await supabaseClient.auth.getSession();
+
+
+    /* =========================
+       BELUM LOGIN
+    ========================= */
+
+    if(!session){
+
+        window.location.href =
+            "login.html?redirect=" +
+            encodeURIComponent(
+                window.location.pathname +
+                window.location.search
+            );
+
+        return;
+
+    }
+
+
+    /* =========================
+       AMBIL FILTER URL
+    ========================= */
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+
+    const filter =
+        params.get("filter");
+
+
+    /* =========================
+       TENTUKAN MODE
+    ========================= */
+
+if (filter === "bestseller") {
+
+    showAllProductsMode("best");
+
+} else if (filter === "new") {
+
+    showAllProductsMode("new");
+
+} else {
+
+    showAllProductsMode("all");
+
+}
+}
+
+
+initAllProductsPage();
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params =
+        new URLSearchParams(
+            window.location.search
+        );
+
+    const filter =
+        params.get("filter");
+
+    if (filter === "bestseller") {
+
+        showAllProductsMode("best");
+
+    } else if (filter === "new") {
+
+        showAllProductsMode("new");
+
+    } else {
+
+        showAllProductsMode("all");
+
+    }
+
+});
+</script>
+</body>
+</html>
